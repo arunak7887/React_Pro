@@ -1,22 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Greet from './component/Greet';
+import Welcome from './component/Welcome';
+import PropsEx from './component/PropsEx';
+import Jsx from './component/Jsx';
+import Jsxfunction from './component/Jsxfunction';
+import JsxAttribute from './component/JsxAttribute';
+import JsxChild from './component/JsxChild';
+import JsxIf from './component/JsxIf';
+import JsxIfObject from './component/JsxIfObject';
 function App() {
+  const data={name:'faisal'};
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Greet/>
+      <Welcome/>
+      <h1>props Example</h1>
+      <PropsEx data={data}/>
+      <h1>Jsx</h1>
+      <Jsx/>
+      <Jsxfunction/>
+      <JsxAttribute/>
+      <JsxChild/>
+      <JsxIf/>
+      <JsxIfObject/>
+
       </header>
     </div>
   );
